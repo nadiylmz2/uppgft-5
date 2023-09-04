@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  /*This doesn't affect the <a> in <nav> in header */
+  /* justify-content: center; */
+  /* according to flex direction it centers, without flex direction it centers both ways */
+  background-color: #6c5458;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.container {
+  background-color: bisque;
+  margin: 0 auto;
+  width: 80vw; /*view width, 80% of view */
+  max-width: 1200px;
+}
+
+header nav a {
+  background-color: #91c7b1;
+  color: darkgreen;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+header nav a:hover {
+  color: #39b382;
+  background-color: darkgreen;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 9px auto;
+  /* background-color: bisque; */
+}
+
+footer {
+  background-color: #e6c5c3;
+}
+
+/* p {
+    width: 70%; 
+    /* 70% of parent container's width 
+    background-color: brown;
+} */
