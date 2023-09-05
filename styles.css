@@ -20,6 +20,13 @@ header {
   margin: 0 auto;
   width: 80vw; /*view width, 80% of view */
   max-width: 1200px;
+  padding: 50px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
 header nav a {
@@ -40,12 +47,33 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 9px auto;
+  margin: 10px auto;
+  width: 60%;
   /* background-color: bisque; */
 }
 
 footer {
   background-color: #e6c5c3;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: rgb(255, 200, 150);
+  }
+
+  header nav {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  main {
+    display: flex;
+    gap: 30px;
+    margin: 0 30px;
+  }
 }
 
 /* p {
