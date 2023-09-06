@@ -24,12 +24,50 @@
         <form action="thanks.html" method="post"></form>
         <fieldset>
           <legend>Personalia</legend>
-          <label for="xxx"></label>
-          <input type="text" id="xxx" />
+          <!-- <label for="xxx"> </label>
+            <input type="text" id="xxx" />
+            Like this one doesn't need to put the input into the label.
+           -->
+          <label
+            >Name
+            <input type="text" name="name" required />
+          </label>
+          <label
+            ><br />Email
+            <input type="email" name="emial" required />
+          </label>
+          <label>
+            <select name="country">
+              <option value="vl1">(select one)</option>
+              <option value="usa">USA</option>
+              <option value="swe">SWEDEN</option>
+              <option value="trk">TURKEY</option>
+              <option value="pkt">PAKISTAN</option>
+            </select>
+          </label>
         </fieldset>
         <fieldset>
           <legend>Select</legend>
+          What department do you want to contact?
+          <label>
+            News
+            <input type="checkbox" />
+          </label>
+          <label>
+            Sports
+            <input type="checkbox" />
+          </label>
+          <p>Do you want to replay?</p>
+          <label>
+            Yes
+            <input type="radio" name="replay" />
+          </label>
+          <label>
+            No
+            <input type="radio" name="replay" />
+          </label>
         </fieldset>
+        <input type="submit" />
       </main>
       <footer>
         <img src="./img/sun.png" alt="Sun symbol." />
